@@ -3,9 +3,7 @@ const express = require('express')
 const app = express()
 const PORT = 5000
 const mongoose = require('mongoose')
-const Product =require('./Models/tasksModels')
 const Task = require('./Models/tasksModels')
-
 
 app.get('/',(req,res)=>{
     res.send('get route hit')
