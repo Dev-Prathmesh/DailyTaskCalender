@@ -5,6 +5,9 @@ const PORT = 5000
 const mongoose = require('mongoose')
 const Task = require('./Models/tasksModels')
 
+var cors = require('cors');
+app.use(cors());
+
 app.get('/',(req,res)=>{
     res.send('get route hit')
 })
