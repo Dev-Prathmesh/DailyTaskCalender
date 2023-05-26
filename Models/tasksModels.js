@@ -9,12 +9,12 @@ const taskSchema = mongoose.Schema(
         date:{
             type:String,
             required:true,
-            default:Date.now()
+            default:Date.now().date
         },
         time:{
             type:String,
             required:true,
-            default:Date.now()
+            default:Date.now().time
         },
         description:{
             type:String,
